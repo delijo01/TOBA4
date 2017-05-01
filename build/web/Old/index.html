@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- Add the header to the page -->
+<c:import url="/includes/header.html"> </c:import>
+
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!-- 
+    Name: John M Delia Jr
+    SPC Student ID: 434299
+    Course COP 2806 - Java Web Applications
+-->
+<!--
+    Page Assignment for Assignment 1
+    1. This is the home page of the application. This should have the name of
+    banking application
+    2. And a navigation
+-->
+<html>
+    <head>
+        <!--Add Page Title-->
+        <title>TOBA Titan Online Banking Application</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/main.css" type="text/css"/>
+    </head>
+    <body>
+        <div>
+            <!-- Create a header for the Index page  -->
+            <header>
+                <h1>Titan Online Banking Application</h1>
+            </header>
+            <section>
+                <!--Create a form for the Index Process-->
+                <form action="Login.html" method="post">
+                    <!-- Setup navigation menu for the other pages-->
+                    <input type="submit" value ="New Customer">
+                    <input type="submit" value ="Account Activity">
+                    <input type="submit" value ="Transaction">
+                </form>
+            </section>
+        </div>
+        <!-- Add the footer to the page -->        
+<c:import url="/includes/footer.jsp" ></c:import>
+    </body>
+</html>
+
+

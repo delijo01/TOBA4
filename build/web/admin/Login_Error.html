@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!-- 
+    Name: John M Delia Jr
+    SPC Student ID: 434299
+    Course COP 2806 - Java Web Applications
+-->
+<!--
+    Page Assignment for Assignment 1
+    1. Create a Login_failure.html
+    2. Add a message that will display the login was incorrect.
+-->
+<!-- Add the header to the page -->
+<c:import url="/includes/header.html" />
+<html>
+    <head>
+        <!-- Add a title for the html -->
+        <title>TOBA Titan Online Banking Application</title>
+        <link rel="stylesheet" href="styles/main.css" type="text/css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <!-- Create a header for the Login Failure page  -->
+            <header>
+                <h1>Admin Login Failure Error</h1>
+            </header>
+            <!--Add a message that will display the login was incorrect. -->
+            <label id="lblloginmessfail" title="Login Failed">Either your id or password is incorrect</label>
+        </div>
+        <br>
+        <div>
+            <p>Please check your username and password and try again.</p>
+            <form action="j_security_check" method="get">
+                <label>Username</label>
+                <input type="text" name="j_username"><br><br>
+                <label>Password</label>
+                <input type="password" name="j_password"><br><br>
+                <button type="submit" id="submit" value="Login">Login</button>
+            </form>
+        </div> 
+        <footer>
+            <p>&copy; Copyright TOBA Titan &amp; Corporation</p>
+        </footer>
+    </body>
+</html>
+<!-- Add the footer to the page -->        
+<c:import url="/includes/footer.jsp" />

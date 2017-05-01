@@ -1,0 +1,63 @@
+<!-- Add the header to the page -->
+<c:import url="/includes/header.html" />
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!-- 
+    Name: John M Delia Jr
+    SPC Student ID: 434299
+    Course COP 2806 - Java Web Applications
+-->
+<!--
+    Page Assignment for Assignment 1
+    1. Create a Login.html
+    2. Add a form to the page
+    3. Add two input eliminates (Username and Password)
+    4. Add a login Button
+    5. Add a link to the "New Customer Sign Up Page"
+
+    Page Assignment for Assignment 2
+    1. Add a reset password link
+
+-->
+<html>
+    <head>
+        <!-- Add a title for the html -->
+        <title>TOBA Titan Online Banking Application</title>
+        <link rel="stylesheet" href="styles/main.css" type="text/css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <!-- Create a header for the Transaction page  -->
+            <header>
+                <h1>Administration Login</h1>
+                <h2>Please Enter Login Information</h2>
+            </header>
+            <!--Create a form for the Admin Login Process-->
+            <form action="j_security_check" method="get" >
+                <!--Created a label for the Username input-->
+                <label class="pad_top" title="Username">Username</label>
+                <!--Created the input for the Username type = text-->
+                <input type="text" name="j_usernname"><br><br>
+                <!--Created a label for the password input-->
+                <label class="pad_top" title="password" >Password</label>
+                <!--Created the input for the Username type = text-->
+                <input type="password" name="j_password"><br><br>
+                <!--Created a login button for the page-->
+                <input type="submit" value ="Login" class="margin_left">
+            </form>
+        </div>
+        <footer>
+            <p>&copy; Copyright TOBA Titan &amp; Corporation</p>
+        </footer>
+    </body>
+</html>
+
+<!-- Add the footer to the page -->        
+<c:import url="/includes/footer.jsp" />
