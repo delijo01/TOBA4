@@ -25,25 +25,28 @@ and open the template in the editor.
             <!-- Create a header for the Index page  -->
             <header>
                 <h1>Titan Online Banking Application</h1>
-            </header>
-            <section><br>
+            </header><br>
+            <section>
                 <!--Create a form for the Index Process-->
-                <form action="Login.jsp" method="post">
-                    <!-- Setup navigation menu for the other pages-->
-                    <input type="submit" value ="Login">
-                    <!--<input type="submit" value ="Account Activity">-->
-                    <!--<input type="submit" value ="Transaction">-->
-                </form><br>
                 <form action="New_customer.jsp" method="post">
                     <!-- Setup navigation menu for the other pages-->
                     <input type="submit" value ="New Customer">
                 </form><br>
-                 <form action="admin\Login.html" method="post">
+                <form action="Account_activity.jsp" method="post">
                     <!-- Setup navigation menu for the other pages-->
+                    <input type="submit" value ="Account Activity">
+                </form><br>
+                <form action="Transaction.jsp" method="post">
+                    <!-- Setup navigation menu for the other pages-->
+                    <input type="submit" value ="Transaction">
+                </form><br>
+                <form action="admin\Login.html" method="post">
+                <!-- Setup navigation menu for the other pages-->
                     <input type="submit" value ="Administration">
                 </form><br>
             </section>
         </div>
         <!-- Add the footer to the page -->        
 <c:import url="/includes/footer.jsp" ></c:import>
+
 

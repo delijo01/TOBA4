@@ -48,9 +48,9 @@ public class TransactionServlet extends HttpServlet {
         //set up condition to set the URL to appropriate page
         if(action.equals("submit")){
             url = "/Transaction.jsp";
-        } else if (action.equals("transferFunds")){
+        } else if (action.equals("transferfunds")){
             //get the parameters for the transactions
-            String transAmt = request.getParameter("transferAmount");
+            String transAmt = request.getParameter("transferamount");
             //format the variable to double
             Double amt = Double.parseDouble(transAmt);
             //create the session scope
@@ -58,8 +58,8 @@ public class TransactionServlet extends HttpServlet {
             //set the session attributes
             User user = (User) session.getAttribute("user");
             //set the variables
-            String transferFrom = request.getParameter("transferFrom");
-            String transferTo = request.getParameter("transferTo");
+            String transferFrom = request.getParameter("transferfrom");
+            String transferTo = request.getParameter("transferto");
             String message = "";
             //set the condtion for the transfer
             if (transferFrom.equals("checking")) {

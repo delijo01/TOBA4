@@ -77,20 +77,9 @@ public class LoginServlet extends HttpServlet {
             HttpSession session = request.getSession();
             //pull the session for the Specified User
             session.setAttribute("user", selUser);
-            //set up condition to act on button selected
-            //if(action.equals("New Customer")){
-                //set the url
-            //    url = "/new_customer.jsp;";
-            //} else if(action.equals("Account Activity")){
-                //set the url
-                url = "/Account_activity.jsp";
-            //} else if(action.equals("Transaction")){
-                //set the url
-                //url = "/Transaction.jsp";
-            //} else {
-                //set the url
-            //    url = "/index.jsp";
-            //}
+            //set the url
+            url = "/mmindex.jsp";
+
         } else {
             //set the url
             url = "/Login_failure.jsp";

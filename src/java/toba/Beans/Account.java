@@ -7,6 +7,7 @@ package toba.Beans;
 
 
 import java.io.Serializable; //adding the Serializable libraries
+import java.text.NumberFormat;
 import java.util.ArrayList;
 import javax.persistence.CascadeType; //adding the persistence libraries
 import javax.persistence.Entity; //adding the persistence libraries
@@ -102,10 +103,10 @@ public class Account implements Serializable{
         return balance;
     }
 
-    //public String getBalCurrFrmt(){
-        //Numberformat currency = Numberformat.getCurrencyInstance();
-        //return currency.format(this.getBal());
-    //}
+    public String getBalanceCurrencyFormat() {
+        NumberFormat currency = NumberFormat.getCurrencyInstance();
+        return currency.format(this.getBal());
+    }
 
     public void setBal(Double bal) {
         this.balance = bal;
