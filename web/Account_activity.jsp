@@ -49,10 +49,11 @@ and open the template in the editor.
             <span>${user.firstName}</span><br>
             <label>Last Name:</label>
             <span>${user.lastName}</span><br>
+            ${request.getSession("user").getCheckingBalance()}
             <label>Current Checking Balance:</label>
-            <span>${account.Checking}</span><br>
+            <span>${user.checkingBalance}</span><br>
             <label>Current Savings Balance:</label>
-            <span>${account.Savings}</span><br>
+            <span>${user.savingsBalance}</span><br>
             
             <input type="submit" value ="return to main menu">
         </form>

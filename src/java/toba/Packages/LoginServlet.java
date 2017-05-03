@@ -70,7 +70,7 @@ public class LoginServlet extends HttpServlet {
         //Create a condition to look for the username and password specified
         //or redirect if the user is null
         if( selUser == null ) {
-            url = "/new_customer.jsp;";
+            url = "/New_customer.jsp;";
         } else if( username.equals(selUser.getUserName()) && 
                 saltPw.equals(selUser.getPassword()) ) {
             //create the session scope
